@@ -1,0 +1,73 @@
+.careers {
+  display: block;
+  height: auto;
+  margin-bottom: 5rem;
+
+  &-image {
+    width: 100%;
+    height: 34.375rem;
+    padding-top: 3.9rem;
+    margin-bottom: 5.7125rem;
+  }
+
+  &-section {
+    font-family: $swanseaBold;
+    font-size: 0.8125rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: $blueish-color;
+    text-transform: uppercase;
+    padding: 3rem 0;
+  }
+
+  &-title {
+    font-size: 2.875rem;
+    color: $primary-color;
+    text-align: left;
+  }
+
+  &-span {
+    display: block;
+    color: $primary-color;
+    margin-bottom: 3.625rem;
+  }
+
+  &-description {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    margin: 2rem 0;
+  }
+
+  &-knowledge,
+  &-unknown {
+    width: 47%;
+    text-align: left;
+  }
+
+  &-knowledge {
+    &-title {
+      margin-bottom: 1.6875rem;
+      font-size: 1.5rem;
+    }
+    &-paragraph {
+      color: $paragraph-color;
+      font-size: 1.125rem;
+      font-weight: normal;
+      line-height: 1.5;
+    }
+  }
+
+  &-unknown {
+    &-title {
+      margin-bottom: 1.6875rem;
+      font-size: 1.5rem;
+    }
+    &-paragraph {
+      color: $paragraph-color;
+      font-size: 1.125rem;
+      font-weight: normal;
+      line-height: 1.5;
+    }
+  }
+}

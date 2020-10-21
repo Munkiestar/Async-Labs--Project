@@ -1,0 +1,52 @@
+.header {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin-top: 1.75rem;
+  margin-bottom: 7rem;
+
+  &-logo {
+    width: 6.5625rem;
+    height: 1.875rem;
+  }
+
+  &-icon {
+    cursor: pointer;
+    width: 58px;
+    height: 36px;
+    position: relative;
+
+    &::before {
+      content: '';
+      height: 2px;
+      position: absolute;
+      right: 0;
+      top: 14px;
+      width: 2.125rem;
+      background-color: #1d1d1d;
+      margin-bottom: 2px;
+    }
+
+    &::after {
+      content: '';
+      height: 2px;
+      position: absolute;
+      right: 0;
+      top: 22px;
+      width: 1.25rem;
+      background-color: #1d1d1d;
+    }
+  }
+}
+
+.header-bottom {
+  font-size: 4.375rem;
+  text-align: left;
+  font-weight: bold;
+  padding-bottom: 3.9rem;
+
+  &-title {
+    display: block;
+  }
+}
