@@ -1,0 +1,61 @@
+.positions {
+  color: $primary-color;
+  margin-bottom: 5rem;
+
+  &-title {
+    text-align: center;
+    font-size: 8.125rem;
+    margin-bottom: 7.625rem;
+  }
+
+  &-open {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+
+    &-description {
+      width: 100%;
+      display: flex;
+      align-self: center;
+      justify-content: space-around;
+      border-bottom: solid 1px $border-color;
+      padding: 42px 51px;
+      text-decoration: none;
+
+      &:first-of-type {
+        border-top: solid 1px $border-color;
+      }
+
+      &-type {
+        color: $paragraph-color;
+        font-size: 1.125rem;
+      }
+
+      &-position {
+        color: $primary-color;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      &-duration {
+        color: #121212;
+        font-size: 1.125rem;
+        font-weight: bold;
+      }
+
+      &:hover {
+        background: $primary-color;
+
+        .positions-open-description-type {
+          color: $paragraph-color;
+        }
+
+        .positions-open-description-position,
+        .positions-open-description-duration {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
