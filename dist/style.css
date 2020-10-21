@@ -22,13 +22,15 @@
 
 body {
   width: 100%;
+  max-width: 85.375rem;
   font-family: "Swansea", sans-serif;
   color: #1d1d1d;
+  margin: auto;
 }
 
 .container {
-  max-width: 71.25rem;
-  width: 100%;
+  width: 71.25rem;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -213,20 +215,35 @@ body {
 }
 
 .positions-open-description-type {
+  width: 100%;
   color: #525252;
   font-size: 1.125rem;
+  text-align: left;
 }
 
 .positions-open-description-position {
+  width: 100%;
   color: #1d1d1d;
   font-size: 1.5rem;
   font-weight: bold;
+  text-align: left;
 }
 
 .positions-open-description-duration {
+  width: 50%;
   color: #121212;
   font-size: 1.125rem;
   font-weight: bold;
+  text-align: right;
+}
+
+.positions-open-description-arrow {
+  width: 12px;
+  height: 22px;
+  margin-left: 4rem;
+  color: #121212;
+  vertical-align: middle;
+  text-align: right;
 }
 
 .positions-open-description:hover {
@@ -240,5 +257,59 @@ body {
 .positions-open-description:hover .positions-open-description-position,
 .positions-open-description:hover .positions-open-description-duration {
   color: #fff;
+}
+
+.footer {
+  max-width: 85.375rem;
+  width: 100%;
+  background-color: #1d1d1d;
+  color: #fff;
+  margin: 8.75rem auto 0;
+  padding: 5.75em 0;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-logo {
+  width: 6.5625rem;
+  height: 1.875rem;
+}
+
+.footer-info ul li, .footer-sociale ul li, .footer-navigation ul li, .footer-contact ul li {
+  text-align: left;
+  list-style-type: none;
+  line-height: 1.69;
+}
+
+.footer-info a, .footer-sociale a, .footer-navigation a, .footer-contact a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-copyright {
+  width: 100%;
+  padding: 5.75em 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-privacy {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
