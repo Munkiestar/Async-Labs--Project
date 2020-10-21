@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'sansea';
+  src: url("../../swansea-font/Swansea.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'swansea-Bold';
+  src: url("../../swansea-font/Swansea Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Swansea", sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
