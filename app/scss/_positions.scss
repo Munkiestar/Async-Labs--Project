@@ -20,7 +20,7 @@
       align-self: center;
       justify-content: space-around;
       border-bottom: solid 1px $border-color;
-      padding: 42px 51px;
+      padding: 2.625rem 3.1875rem;
       text-decoration: none;
 
       &:first-of-type {
@@ -29,7 +29,7 @@
 
       &-type {
         width: 100%;
-        color: $paragraph-color;
+        color: $lightGray-color;
         font-size: 1.125rem;
         text-align: left;
       }
@@ -51,8 +51,8 @@
       }
 
       &-arrow {
-        width: 12px;
-        height: 22px;
+        width: 0.75rem;
+        height: 1.375rem;
         margin-left: 4rem;
         color: #121212;
         vertical-align: middle;
@@ -69,6 +69,83 @@
         .positions-open-description-position,
         .positions-open-description-duration {
           color: #fff;
+        }
+      }
+    }
+  }
+}
+
+// max-width 780px
+@include breakpoints-down(small) {
+  .positions {
+    margin-top: 8rem;
+
+    &-title {
+      font-size: 5.5rem;
+    }
+
+    &-open {
+      &-description {
+        width: 100%;
+        height: 100%;
+        padding: 2.625rem 0;
+        align-items: center;
+
+        &-arrow {
+          display: none;
+        }
+
+        &-type {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+// max-width 480px
+@include breakpoints-down(mobile) {
+  .inner-width {
+    width: 100%;
+
+    .positions {
+      width: 100%;
+      margin-top: 6rem;
+
+      &-title {
+        font-size: 3.5625rem;
+        margin-bottom: 5.625rem;
+      }
+
+      &-open {
+        &-description {
+          width: 100%;
+          height: 100%;
+          padding: 1.625rem 0;
+          display: grid;
+          grid-template-columns: repeat(2, 2fr );
+
+          &-arrow {
+            display: none;
+          }
+
+          &-type {
+            color: $lightGray-color;
+          }
+
+          &-duration {
+            width: 100%;
+            color: $lightGray-color;
+            font-size: 1rem;
+            align-self: start;
+          }
+
+          &-position {
+            font-size: 1.1rem;
+            margin: 0.8rem 0;
+            width: 100%;
+            order: 2;
+          }
         }
       }
     }

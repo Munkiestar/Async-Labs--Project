@@ -2,12 +2,17 @@
   display: block;
   height: auto;
   margin-bottom: 5rem;
+  width: 100%;
 
   &-image {
     width: 100%;
     height: 34.375rem;
     padding-top: 3.9rem;
     margin-bottom: 5.7125rem;
+
+    img {
+      width: 100%;
+    }
   }
 
   &-section {
@@ -68,6 +73,50 @@
       font-size: 1.125rem;
       font-weight: normal;
       line-height: 1.5;
+    }
+  }
+}
+
+// max-width 780px
+@include breakpoints-down(small) {
+  .careers {
+    width: 100%;
+    margin: auto;
+
+    &-image {
+      width: 100%;
+      height: auto;
+    }
+
+    &-section {
+      padding-top: 0;
+    }
+
+    &-description {
+      flex-direction: column;
+    }
+
+    &-knowledge,
+    &-unknown {
+      width: 100%;
+
+      &-title:nth-child(1) {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+// max-width 480px
+@include breakpoints-down(mobile) {
+  .careers {
+    &-span {
+      margin-bottom: 0;
+    }
+
+    &-image {
+      padding-top: 1.9rem;
+      margin-bottom: 3.7125rem;
     }
   }
 }

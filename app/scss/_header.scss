@@ -50,3 +50,20 @@
     display: block;
   }
 }
+
+// max-width 780px
+@include breakpoints-down(small) {
+  .container {
+    width: 90%;
+    margin: auto;
+    // background-color: yellow;
+  }
+  .inner-width {
+    width: 90%;
+    margin: auto;
+  }
+
+  .header-bottom {
+    font-size: 4rem;
+  }
+}

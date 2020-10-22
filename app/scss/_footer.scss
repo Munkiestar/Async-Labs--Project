@@ -10,6 +10,7 @@
     display: flex;
     text-align: center;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &-logo {
@@ -47,5 +48,55 @@
     color: #fff;
     text-decoration: none;
     font-size: 1rem;
+  }
+}
+
+// max-width 780px
+@include breakpoints-down(small) {
+  .footer {
+    margin: 2.75rem auto 0;
+    padding: 3.75em 0;
+
+    &-logo {
+      display: none;
+    }
+
+    &-info,
+    &-sociale {
+      width: 50%;
+    }
+
+    &-navigation,
+    &-contact {
+      width: 100%;
+      margin-top: 2rem;
+    }
+
+    &-copyright {
+      width: 100%;
+      padding: 0.75em 0 0;
+    }
+  }
+}
+
+// max-width 480px
+@include breakpoints-down(mobile) {
+  .footer {
+    &-info,
+    &-sociale {
+      width: 100%;
+    }
+    &-info {
+      margin-bottom: 2rem;
+    }
+    &-copyright {
+      height: 100%;
+      display: block;
+      text-align: left;
+
+      div {
+        margin-bottom: 1rem;
+      }
+    }
   }
 }

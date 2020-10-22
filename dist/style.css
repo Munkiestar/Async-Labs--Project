@@ -96,10 +96,25 @@ body {
   display: block;
 }
 
+@media (max-width: 48.75em) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  .inner-width {
+    width: 90%;
+    margin: auto;
+  }
+  .header-bottom {
+    font-size: 4rem;
+  }
+}
+
 .careers {
   display: block;
   height: auto;
   margin-bottom: 5rem;
+  width: 100%;
 }
 
 .careers-image {
@@ -107,6 +122,10 @@ body {
   height: 34.375rem;
   padding-top: 3.9rem;
   margin-bottom: 5.7125rem;
+}
+
+.careers-image img {
+  width: 100%;
 }
 
 .careers-section {
@@ -171,6 +190,42 @@ body {
   line-height: 1.5;
 }
 
+@media (max-width: 48.75em) {
+  .careers {
+    width: 100%;
+    margin: auto;
+  }
+  .careers-image {
+    width: 100%;
+    height: auto;
+  }
+  .careers-section {
+    padding-top: 0;
+  }
+  .careers-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .careers-knowledge, .careers-unknown {
+    width: 100%;
+  }
+  .careers-knowledge-title:nth-child(1), .careers-unknown-title:nth-child(1) {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 30em) {
+  .careers-span {
+    margin-bottom: 0;
+  }
+  .careers-image {
+    padding-top: 1.9rem;
+    margin-bottom: 3.7125rem;
+  }
+}
+
 .positions {
   color: #1d1d1d;
   margin-bottom: 5rem;
@@ -206,7 +261,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border-bottom: solid 1px #d6d6d6;
-  padding: 42px 51px;
+  padding: 2.625rem 3.1875rem;
   text-decoration: none;
 }
 
@@ -216,7 +271,7 @@ body {
 
 .positions-open-description-type {
   width: 100%;
-  color: #525252;
+  color: #b3b3b3;
   font-size: 1.125rem;
   text-align: left;
 }
@@ -238,8 +293,8 @@ body {
 }
 
 .positions-open-description-arrow {
-  width: 12px;
-  height: 22px;
+  width: 0.75rem;
+  height: 1.375rem;
   margin-left: 4rem;
   color: #121212;
   vertical-align: middle;
@@ -259,6 +314,74 @@ body {
   color: #fff;
 }
 
+@media (max-width: 48.75em) {
+  .positions {
+    margin-top: 8rem;
+  }
+  .positions-title {
+    font-size: 5.5rem;
+  }
+  .positions-open-description {
+    width: 100%;
+    height: 100%;
+    padding: 2.625rem 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .positions-open-description-arrow {
+    display: none;
+  }
+  .positions-open-description-type {
+    width: 90%;
+  }
+}
+
+@media (max-width: 30em) {
+  .inner-width {
+    width: 100%;
+  }
+  .inner-width .positions {
+    width: 100%;
+    margin-top: 6rem;
+  }
+  .inner-width .positions-title {
+    font-size: 3.5625rem;
+    margin-bottom: 5.625rem;
+  }
+  .inner-width .positions-open-description {
+    width: 100%;
+    height: 100%;
+    padding: 1.625rem 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (2fr)[2];
+        grid-template-columns: repeat(2, 2fr);
+  }
+  .inner-width .positions-open-description-arrow {
+    display: none;
+  }
+  .inner-width .positions-open-description-type {
+    color: #b3b3b3;
+  }
+  .inner-width .positions-open-description-duration {
+    width: 100%;
+    color: #b3b3b3;
+    font-size: 1rem;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .inner-width .positions-open-description-position {
+    font-size: 1.1rem;
+    margin: 0.8rem 0;
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
 .footer {
   max-width: 85.375rem;
   width: 100%;
@@ -276,6 +399,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer-logo {
@@ -311,5 +436,43 @@ body {
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
+}
+
+@media (max-width: 48.75em) {
+  .footer {
+    margin: 2.75rem auto 0;
+    padding: 3.75em 0;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .footer-info, .footer-sociale {
+    width: 50%;
+  }
+  .footer-navigation, .footer-contact {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .footer-copyright {
+    width: 100%;
+    padding: 0.75em 0 0;
+  }
+}
+
+@media (max-width: 30em) {
+  .footer-info, .footer-sociale {
+    width: 100%;
+  }
+  .footer-info {
+    margin-bottom: 2rem;
+  }
+  .footer-copyright {
+    height: 100%;
+    display: block;
+    text-align: left;
+  }
+  .footer-copyright div {
+    margin-bottom: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
