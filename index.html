@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/dist/style.css" />
     <script defer src="./app/js/script.js"></script>
     <title>Careers</title>
@@ -10,12 +18,94 @@
   <body>
     <div class="container">
       <!-- /* -------------------------------------------- */ -->
+      <!--  Navigation  -->
+      <nav class="nav" id="nav">
+        <div class="nav-container" id="nav">
+          <button class="nav-btn-close" id="close">
+            <i class="fa fa-times fa-2x"></i>
+          </button>
+          <div class="nav-section">
+            <div class="nav-section-left">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="nav-section-right">
+              <div class="upper-section">
+                <ul>
+                  <li>
+                    <a href="#">Careers</a>
+                    <img
+                      class="upper-section-arrow"
+                      src="./images/arrow-white.svg"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <a href="#">Team</a>
+                    <img
+                      class="upper-section-arrow"
+                      src="./images/arrow-white.svg"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <a href="#">Blog</a>
+                    <img
+                      class="upper-section-arrow"
+                      src="./images/arrow-white.svg"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div class="lower-section">
+                <div class="lower-section-info">
+                  <ul>
+                    <li>
+                      <a href="mailto: hello@asynclabs.co"
+                        >hello@asynclabs.co</a
+                      >
+                    </li>
+                    <li>
+                      <a href="tel: +385 99 4936 071">+385 99 4936 071</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="lower-section-links">
+                  <a href="https://www.facebook.com/asynclabs/" target="_blank">
+                    Fb.
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/10948425"
+                    target="_blank"
+                  >
+                    Li.
+                  </a>
+                  <a href="https://twitter.com/asynclabsco" target="_blank">
+                    Tw.
+                  </a>
+                  <a href="https://instagram.com/asynclabs" target="_blank">
+                    Ig.
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- /* -------------------------------------------- */ -->
       <!--  Header  -->
       <header class="header">
         <a href="#"
           ><img class="header-logo" src="./images/logo.svg" alt="logo image"
         /></a>
-        <span class="header-icon"></span>
+        <span class="header-icon" id="menu"></span>
       </header>
 
       <div class="inner-width">
