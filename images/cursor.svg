@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#FFF" fill-rule="nonzero">
+            <path style="mix-blend-mode:difference" d="M802 103.438L786.75 103.438 793.75 97.487 792 96 782 104.5 792 113 793.75 111.513 786.75 105.563 802 105.563z" transform="translate(-784 -97) rotate(135 792 104.5)"/>
+        </g>
+    </g>
+</svg>

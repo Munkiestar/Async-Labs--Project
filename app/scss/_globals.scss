@@ -5,6 +5,10 @@
   outline: none;
 }
 
+html {
+  cursor: url('../../images/cursor.svg'), auto;
+}
+
 body {
   width: 100%;
   background-color: #fff;

@@ -20,6 +20,10 @@
   outline: none;
 }
 
+html {
+  cursor: url("../../images/cursor.svg"), auto;
+}
+
 body {
   width: 100%;
   background-color: #fff;
@@ -266,8 +270,8 @@ textarea {
 
 .header-icon {
   cursor: pointer;
-  width: 58px;
-  height: 36px;
+  width: 3.625rem;
+  height: 2.25rem;
   position: relative;
 }
 
@@ -276,10 +280,12 @@ textarea {
   height: 2px;
   position: absolute;
   right: 0;
-  top: 14px;
+  top: 0.875rem;
   width: 2.125rem;
   background-color: #1d1d1d;
   margin-bottom: 2px;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
 }
 
 .header-icon::after {
@@ -287,9 +293,19 @@ textarea {
   height: 2px;
   position: absolute;
   right: 0;
-  top: 22px;
+  top: 1.375rem;
   width: 1.25rem;
   background-color: #1d1d1d;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+}
+
+.header-icon:hover::before {
+  width: 1.25rem;
+}
+
+.header-icon:hover::after {
+  width: 2.125rem;
 }
 
 .header-bottom {
@@ -731,6 +747,7 @@ textarea {
 .container-form .form .form-control small {
   display: block;
   color: #ba1f33;
+  font-size: 0.75rem;
   margin-bottom: 1.3rem;
   padding: 0.4rem 1rem;
   visibility: hidden;
@@ -738,6 +755,11 @@ textarea {
 
 .container-form .form .form-control.error small {
   visibility: visible;
+  color: #ba1f33;
+}
+
+.container-form .form .form-control.success input {
+  border-bottom: 1px solid #2ecc71;
 }
 
 .container-form .form .textarea {

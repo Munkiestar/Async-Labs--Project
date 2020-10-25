@@ -33,12 +33,12 @@
         background-color: #f5f5f5;
         width: 100%;
         border: none;
-        //   display: none;
       }
 
       small {
         display: block;
         color: $error-color;
+        font-size: 0.75rem;
         margin-bottom: 1.3rem;
         padding: 0.4rem 1rem;
         visibility: hidden;
@@ -46,15 +46,12 @@
 
       &.error small {
         visibility: visible;
+        color: $error-color;
       }
 
-      // &.success input {
-      //   border-color: $success-color;
-      // }
-
-      // &.error input {
-      //   border-color: $error-color;
-      // }
+      &.success input {
+        border-bottom: 1px solid $success-color;
+      }
     }
 
     .textarea {
